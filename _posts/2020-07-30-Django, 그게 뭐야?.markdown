@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Django, 그게 뭐야?"
+date:   2020-07-30
+categories: Javascript NodeJS
+![posting1](https://user-images.githubusercontent.com/64029753/88945804-67cd7900-d2c9-11ea-88ae-7afbb6b461e8.jpg)
