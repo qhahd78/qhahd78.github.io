@@ -6,11 +6,15 @@ categories: Javascript NodeJS
 ---
 
 ## <Bootstrap> 
+
 Bootstrap 은 복사해서 html 태그 안으로 붙여넣어서 사용.
 
 ## <URL 관리> 
+
 -path의 구조: path('URL', view.함수, name="url이름 정해서 쓰기"),
     URL 부분에는 페이지 맨 끝에 나올 주소 
     함수 부분에는 view에서 불러올 함수 
     name은 임의로 정한 path 의 이름 
     
+## 외워야 할 부분 
+    ### path의 구조: path('URL', view.함수, name="url이름 정해서 쓰기"),
