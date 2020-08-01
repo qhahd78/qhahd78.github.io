@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello django"
-date:   2020-07-30
+date:   2020-08-01
 categories: Javascript NodeJS
 ---
 
