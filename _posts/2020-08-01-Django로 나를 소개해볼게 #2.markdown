@@ -19,10 +19,32 @@ categories: Javascript NodeJS
 ```Python
 def home(request):
     designers = Designer.objects.all()
+    
     #query set 을 통째로 designers라는 변수에 넣었다. 
     #객체를 templates으로 반환하는 과정.
     #메소드: Designer.objects.all() 
+    
     return render(request, 'home.html', {'designers' : designers})
+    
     #객체 모두를 designers 로 반환해준다(딕셔너리 형태) 
 ```
 ## Detail Page 구현 
+>PK : Model 을 통해 생성된 객체들을 구분할 수 있는 고유한 Key (1,2,3 . . .)  
+![pk 확인](https://user-images.githubusercontent.com/64029753/89105245-76976580-d45a-11ea-8f47-39995ff72d89.jpg)
+
+>Path Convertor : 여러 객체의 url을 효율적으로 다룰 수 있도록 도와주는 도구
+
+```Python
+ path('profile/<int:designer_id>', views.detail, name = "detail"),
+ 
+ #int 값에는 자동으로 번호가 들어간다. 1,2,3 . . . 
+ #detail 이라는 함수를 불러와 사용한다. 
+ 
+ <a href="{% url 'update' designer.id %}"
+ 
+ #detail 이라는 함수로 부른다. 객체 id (=pk 값) 도 함께 불러준다. 
+```
+
+>get_object_or_404 : Object를 가져오려 했는데 없을 경우 나타나는 에러 
+
+ 
