@@ -31,3 +31,4 @@ categories: Javascript NodeJS
 ## 외워야 할 부분 
     ### path의 구조: path('URL', view.함수, name="url이름 정해서 쓰기"),
     ### Template 언어: {{}} - 변수, {%%} - 문법 
+
