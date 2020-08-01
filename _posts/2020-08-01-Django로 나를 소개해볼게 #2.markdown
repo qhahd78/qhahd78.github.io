@@ -17,7 +17,7 @@ categories: Javascript NodeJS
 > query 란 데이터베이스에 정보를 요청해주는 것을 의미하며,
 > 파이썬으로 작성한 코드가 sql 로 매핑되어 queryset 이라는 자료 형태로 값이 넘어오게 된다. by Google
 
-```Python
+```python
 
 def home(request):
     designers = Designer.objects.all()
@@ -37,7 +37,7 @@ def home(request):
 
 >Path Convertor : 여러 객체의 url을 효율적으로 다룰 수 있도록 도와주는 도구
 
-```Python
+```python
  
  path('profile/<int:designer_id>', views.detail, name = "detail"),
  
