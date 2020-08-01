@@ -7,7 +7,7 @@ categories: Javascript NodeJS
  
 ## Model 이란 ? 
 
-데이터에 접속하고, 관리하도록 도와주는 객체 
+데이터에 접속하고, 관리하도록 도와주는 !모듈!
 
 ## Model의 생성 
 
