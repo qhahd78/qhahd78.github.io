@@ -29,7 +29,7 @@ categories: Javascript NodeJS
  ```python
  
  {% extends 'base.html' %}
- #다른 html 앞에서 상속시킨 base.html 
+ #다른 html 맨 앞에서 extends로 base.html을 불러와 상속시킨다. 
  
  ```
 {%endraw%}
