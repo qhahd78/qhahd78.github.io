@@ -25,3 +25,4 @@ def home(request):
     return render(request, 'home.html', {'designers' : designers})
     #객체 모두를 designers 로 반환해준다(딕셔너리 형태) 
 ```
+## Detail Page 구현 
