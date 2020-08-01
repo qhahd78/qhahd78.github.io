@@ -18,6 +18,7 @@ categories: Javascript NodeJS
 > 파이썬으로 작성한 코드가 sql 로 매핑되어 queryset 이라는 자료 형태로 값이 넘어오게 된다. by Google
 
 ```Python
+
 def home(request):
     designers = Designer.objects.all()
     
@@ -28,6 +29,7 @@ def home(request):
     return render(request, 'home.html', {'designers' : designers})
     
     #객체 모두를 designers 로 반환해준다(딕셔너리 형태) 
+
 ```
 ## Detail Page 구현 
 >PK : Model 을 통해 생성된 객체들을 구분할 수 있는 고유한 Key (1,2,3 . . .)  
@@ -36,6 +38,7 @@ def home(request):
 >Path Convertor : 여러 객체의 url을 효율적으로 다룰 수 있도록 도와주는 도구
 
 ```Python
+ 
  path('profile/<int:designer_id>', views.detail, name = "detail"),
  
  #int 값에는 자동으로 번호가 들어간다. 1,2,3 . . . 
@@ -44,6 +47,7 @@ def home(request):
  <a href="{% url 'update' designer.id %}"
  
  #detail 이라는 함수로 부른다. 객체 id (=pk 값) 도 함께 불러준다. 
+ 
 ```
 
 >get_object_or_404 : Object를 가져오려 했는데 없을 경우 나타나는 에러 
