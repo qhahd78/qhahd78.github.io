@@ -21,7 +21,7 @@ categories: Javascript NodeJS
  *변수(명사) : {{ }}
  *탬플릿 태그(동사)(문법) : {% %}추가해주기
  
- ## Static File 
+## Static File 
  + 내용이 고정되어있어 응답할 때 파일 그대로를 보낸다. 
    *Static : 개발자가 준비해두는 파일. 
    *Media : 사용자들이 업로드 하는 파일 
