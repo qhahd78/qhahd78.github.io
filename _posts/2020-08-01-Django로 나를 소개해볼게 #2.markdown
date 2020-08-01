@@ -4,7 +4,7 @@ title:  "Django로 나를 소개해볼게 #2"
 date:   2020-08-01
 categories: Javascript NodeJS
 --- 
-{ % raw % } 
+{%raw%} 
 
 ## 데이터의 흐름 이해하기 
   * app 을 setting.py에 등록. (app이 있다는 것을 알림) 
@@ -47,7 +47,6 @@ def home(request):
 ```
 
 >get_object_or_404 : Object를 가져오려 했는데 없을 경우 나타나는 에러 
-
-{ % endraw % }
+{%endraw%}
 
  
