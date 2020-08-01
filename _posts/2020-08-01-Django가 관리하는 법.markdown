@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello django"
+title:  "Django가 관리하는 법"
 date:   2020-08-01
 categories: Javascript NodeJS
 ---
