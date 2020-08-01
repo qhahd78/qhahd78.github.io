@@ -101,4 +101,12 @@ def delete(request, designer_id):
     #Home으로 이동 
 
  ```
+ 
+ ## Requirements: 패키지 종속성 관리 
+  *패키지의 버전 확인 가능 
+```bash
+pip install -r requirements.txt 
+pip freeze > requirements.txt
+
+```
 {%endraw%}
