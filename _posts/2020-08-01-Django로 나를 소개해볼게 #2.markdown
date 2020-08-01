@@ -21,6 +21,7 @@ def home(request):
     designers = Designer.objects.all()
     #query set 을 통째로 designers라는 변수에 넣었다. 
     #객체를 templates으로 반환하는 과정.
+    #메소드: Designer.objects.all() 
     return render(request, 'home.html', {'designers' : designers})
     #객체 모두를 designers 로 반환해준다(딕셔너리 형태) 
 ```
