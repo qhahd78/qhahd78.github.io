@@ -20,6 +20,14 @@ categories: Javascript NodeJS
 + python의 변수, 문법을 html에서 쓸 수 있도록 한다. 
  *변수(명사) : {{ }}
  *탬플릿 태그(동사)(문법) : {%%}
+ 
+ ## Static File 
+ + 내용이 고정되어있어 응답할 때 파일 그대로를 보낸다. 
+   *Static : 개발자가 준비해두는 파일. 
+   *Media : 사용자들이 업로드 하는 파일 
+ 
+ 
     
 ## 외워야 할 부분 
     ### path의 구조: path('URL', view.함수, name="url이름 정해서 쓰기"),
+    ### Template 언어: {{}} - 변수, {%%} - 문법 
