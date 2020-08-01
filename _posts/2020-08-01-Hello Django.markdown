@@ -8,5 +8,5 @@
 7. url.py에서 path를 이용, html 파일과 연결
 8. python manage.py runserver 서버 돌리기 
 
-## 외야 할 부분
+## 외워야 할 부분
 settings.py(app 추가 시키기) -- templates(html 파일 생성)--views.py( 함수 생성)-- urls.py (path 이용 html 연결) 
