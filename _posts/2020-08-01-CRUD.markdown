@@ -29,13 +29,76 @@ categories: Javascript NodeJS
   
   *객체 생성 -> 입력 Data 저장 ->입력 Data 저장 
 
+```python 
+
+def create(request): 
+    if request.method == 'POST': 
+        post = Designer()
+    #객체 생성 (메소드가 POST일 때만 해당.) 
+        
+        if 'image' in request.FILES: 
+            post.image = request.FILES['image']
+        #파일 체크     
+            
+        post.name = request.POST['name']
+        post.address = request.POST['address']
+        #입력 Data 저장 
+        
+        post.description = request.POST['description']
+        
+
+        post.save()
+        #입력 Data 저장 
+
+        return redirect('detail', post.id)
+```
+
 ## UPDATE   
   *정보 수정이 필요한 객체를 찾아 새로운 Data를 저장 
   
   *객체 탐색 -> 입력 Data 저장 ->입력 Data 저장 
 
+```python
+def update(request, designer_id) : 
+    get_object_or_404(Designer, pk = designer_id)
+    
+    if request.method == 'POST' : 
+    #객체 탐색 
+    
+        if 'image' in request.FILES: 
+            post.image = request.FILES['image']
+        #파일 체크 
+        
+        post.name = request.POST['name']
+        post.address = request.POST['address']
+        #입력 Data 저장 
+        
+        post.description = request.POST['description']
+
+        post.save()
+        #입력 Data 저장 
+
+        return redirect('detail', post.id)
+        
+    else: 
+        return render(request, 'update.html', {'designer' : post})
+    
+```
 ## DELETE
   *제거 해야할 객체를 찾아 삭제 
   
   *객체 탐색 -> 객체 삭제 -> Home으로 이동 
+ ```python 
+ 
+def delete(request, designer_id): 
+    get_object_or_404(Designer, pk = designer_id)
+    #객체 탐색
+    
+    post.delete()
+    #객체 삭제 
+
+    return redirect('home')
+    #Home으로 이동 
+
+ ```
 {%endraw%}
