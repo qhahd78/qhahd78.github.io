@@ -7,10 +7,10 @@ categories: Javascript NodeJS
 {%raw%}
 ### CRUD #1
 
-  *Create
-  *Read 
-  *Update
-  *Delete
+ *Create
+ *Read 
+ *Update
+ *Delete
   
 ## GET/POST
     
