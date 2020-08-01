@@ -49,6 +49,7 @@ def home(request):
  #detail 이라는 함수로 부른다. 객체 id (=pk 값) 도 함께 불러준다. 
  
 ```
+![image](https://user-images.githubusercontent.com/64029753/89105605-61700600-d45d-11ea-9c07-f5e89b3e2c97.png)
 
 >get_object_or_404 : Object를 가져오려 했는데 없을 경우 나타나는 에러 
 {%endraw%}
