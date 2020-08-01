@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "CRUD #1,2"
+date:   2020-08-02
+categories: Javascript NodeJS
+--- 
+{%raw%}
+### CRUD #1
+
+  *Create
+  *Read 
+  *Update
+  *Delete
+  
+## GET/POST
+    
+  *GET: 데이터를 'URL' 에 담아 보낸다.
+        : 전송 길이에 제약이 있다. 
+        : Caching 가능 --> 작업 속도 빠름 
+        => 데이터 조회에 활용 
+    
+  *POST: Body에 담아 보낸다. 
+         : 전송 길이에 제약이 없다. 
+         : Caching 불가능
+         =>데이터 생성에 활용
+
+## CREATE 
+  *새로운 객체를 생성해 데이터를 저장 
+  
+  *객체 생성 -> 입력 Data 저장 ->입력 Data 저장 
+
+## UPDATE   
+  *정보 수정이 필요한 객체를 찾아 새로운 Data를 저장 
+  
+  *객체 탐색 -> 입력 Data 저장 ->입력 Data 저장 
+
+## DELETE
+  *제거 해야할 객체를 찾아 삭제 
+  
+  *객체 탐색 -> 객체 삭제 -> Home으로 이동 
+{%endraw%}
