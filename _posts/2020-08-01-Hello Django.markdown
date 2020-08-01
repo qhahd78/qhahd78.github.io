@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "Hello Django"
+date:   2020-08-01
+categories: Javascript NodeJS
+--- 
+
+
+
+
+
 ## < 가상환경 세팅 >
 1. pip install django -장고 설치 
 2. django-admin starproject [프로젝트 이름 쓰기]- 프로젝트 만들기 
