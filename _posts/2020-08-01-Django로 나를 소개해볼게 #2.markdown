@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Django로 나를 소개해볼게 #2"
+date:   2020-08-01
+categories: Javascript NodeJS
+--- 
+
+## 데이터의 흐름 이해하기 
+  * app 을 setting.py에 등록. (app이 있다는 것을 알림) 
+  * app 안에 "template" 폴더를 만든 후 html 파일들을 작성 .
+  * view.py 에 함수 형식으로 html 을 불러서 열어주는 함수들을 작성. 
+  * url에서 view를 연결해준다. (html 을 연결) 
+  
+## Query Set 이란? 
+  * 전달받은 모델의 객체 목록 (자료의 형태) 
+> query 란 데이터베이스에 정보를 요청해주는 것을 의미하며,
+> 파이썬으로 작성한 코드가 sql 로 매핑되어 queryset 이라는 자료 형태로 값이 넘어오게 된다. by Google
+
+```Python
+def home(request):
+    designers = Designer.objects.all()
+    #query set 을 통째로 designers라는 변수에 넣었다. 
+    #객체를 templates으로 반환하는 과정. 
+    return render(request, 'home.html', {'designers' : designers})
+    #객체 모두를 designers 로 반환해준다(딕셔너리 형태) 
+```
