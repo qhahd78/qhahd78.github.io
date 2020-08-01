@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Django는 중복을 싫어해"
+date:   2020-08-01
+categories: Javascript NodeJS
+--- 
