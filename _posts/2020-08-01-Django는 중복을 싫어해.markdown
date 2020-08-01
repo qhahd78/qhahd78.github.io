@@ -4,7 +4,7 @@ title:  "Django는 중복을 싫어해"
 date:   2020-08-01
 categories: Javascript NodeJS
 --- 
-
+{%raw%}
 ## URL Include
   *App 별로 URL을 관리할 수 있도록 구조화 
   *app 안에 직접 url을 만드는 것. 
@@ -32,3 +32,4 @@ categories: Javascript NodeJS
  #다른 html 앞에서 상속시킨 base.html 
  
  ```
+{%endraw%}
