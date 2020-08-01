@@ -39,17 +39,17 @@ class Designer(models.Model):
  python manage.py migrate 
  ```
  
- ## Superuser 생성 
+## Superuser 생성 
  ``` bash
  python manage.py createsuperuser
  ```
  * 터미널에서 사용자 이름 , 비밀번호 입력. (이메일 주소는 안 쳐도 된다.) 
  
- ## admin 페이지 이용 
+## admin 페이지 이용 
  * /admin 으로 페이지 열기 
  * db에는 모델을 알려줬지만, admin에게는 안 알려줬기 때문에 admin에게 model을 알려줘야 한다. 
  
- ## admin 에게 Model 알려주기 
+## admin 에게 Model 알려주기 
  
  ``` python 
 from django.contrib import admin
