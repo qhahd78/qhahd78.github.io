@@ -7,27 +7,27 @@ categories: Javascript NodeJS
 {%raw%}
 ### CRUD #1
 
- *Create
- *Read 
- *Update
- *Delete
+  * Create
+  * Read 
+  * Update
+  * Delete
   
 ## GET/POST
     
-  *GET: 데이터를 'URL' 에 담아 보낸다.
+  * GET: 데이터를 'URL' 에 담아 보낸다.
         : 전송 길이에 제약이 있다. 
         : Caching 가능 --> 작업 속도 빠름 
         => 데이터 조회에 활용 
     
-  *POST: Body에 담아 보낸다. 
+  * POST: Body에 담아 보낸다. 
          : 전송 길이에 제약이 없다. 
          : Caching 불가능
          =>데이터 생성에 활용
 
 ## CREATE 
-  *새로운 객체를 생성해 데이터를 저장 
+  * 새로운 객체를 생성해 데이터를 저장 
   
-  *객체 생성 -> 입력 Data 저장 ->입력 Data 저장 
+  * 객체 생성 -> 입력 Data 저장 ->입력 Data 저장 
 
 ```python 
 
@@ -54,9 +54,9 @@ def create(request):
 ```
 
 ## UPDATE   
-  *정보 수정이 필요한 객체를 찾아 새로운 Data를 저장 
+  * 정보 수정이 필요한 객체를 찾아 새로운 Data를 저장 
   
-  *객체 탐색 -> 입력 Data 저장 ->입력 Data 저장 
+  * 객체 탐색 -> 입력 Data 저장 ->입력 Data 저장 
 
 ```python
 def update(request, designer_id) : 
@@ -85,9 +85,10 @@ def update(request, designer_id) :
     
 ```
 ## DELETE
-  *제거 해야할 객체를 찾아 삭제 
   
-  *객체 탐색 -> 객체 삭제 -> Home으로 이동 
+  * 제거 해야할 객체를 찾아 삭제 
+  
+  * 객체 탐색 -> 객체 삭제 -> Home으로 이동 
  ```python 
  
 def delete(request, designer_id): 
@@ -101,6 +102,7 @@ def delete(request, designer_id):
     #Home으로 이동 
 
  ```
+ ### CRUD#2
  
  ## Requirements: 패키지 종속성 관리 
   *패키지의 버전 확인 가능 
